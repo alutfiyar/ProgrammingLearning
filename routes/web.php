@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register');
+Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register')->middleware('guest');
 Route::post('/register', [AuthController::class, 'register']);
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
