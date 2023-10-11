@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/register', function () {
     return null;
 });
+
+Route::get('/sign', function () {
+    return null;
+});
