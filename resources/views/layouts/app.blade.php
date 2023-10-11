@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <title>Your App Title</title>
 </head>
 <body>
