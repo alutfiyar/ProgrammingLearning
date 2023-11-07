@@ -21,6 +21,8 @@ Route::get('/', function () {
 
 Route::get('/tests', [TestController::class, "index"])->name('tests.index');
 
+Route::get('/tests/start/{test}', 'TestController@startTest')->name('tests.start');
+
 Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register')->middleware('guest');
 Route::post('/register', [AuthController::class, 'register']);
 

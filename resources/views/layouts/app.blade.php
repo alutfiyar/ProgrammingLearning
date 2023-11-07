@@ -21,7 +21,7 @@
     </main>
 
     <footer>
-        <!-- Здесь может быть подвал сайта -->
+        @yield('footer')
     </footer>
 </body>
 </html>
