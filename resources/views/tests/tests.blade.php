@@ -30,6 +30,47 @@
             <a href="{{ route('tests.start', 'test2') }}" class="btn btn-primary">Начать тест</a>
         </div>
 
+                <!-- Тест 3 -->
+                <div class="test-block">
+            <h2>Тест 3</h2>
+            <p><strong>Уровень сложности:</strong> Продвинутый</p>
+            <p><strong>Время прохождения:</strong> 60 минут</p>
+            <p><strong>Язык:</strong> Английский</p>
+            <p><strong>Приближенные концепции C++:</strong> Многопоточное программирование, шаблоны</p>
+            <a href="{{ route('tests.start', 'test3') }}" class="btn btn-primary">Начать тест</a>
+        </div>
+
+        <!-- Тест 4 -->
+        <div class="test-block">
+            <h2>Тест 4</h2>
+            <p><strong>Уровень сложности:</strong> Средний</p>
+            <p><strong>Время прохождения:</strong> 45 минут</p>
+            <p><strong>Язык:</strong> Английский</p>
+            <p><strong>Приближенные концепции C++:</strong> Структуры данных, указатели</p>
+            <a href="{{ route('tests.start', 'test4') }}" class="btn btn-primary">Начать тест</a>
+        </div>
+
+        <!-- Тест 5 -->
+        <div class="test-block">
+            <h2>Тест 5</h2>
+            <p><strong>Уровень сложности:</strong> Начальный</p>
+            <p><strong>Время прохождения:</strong> 30 минут</p>
+            <p><strong>Язык:</strong> Английский</p>
+            <p><strong>Приближенные концепции C++:</strong> Операторы, функции</p>
+            <a href="{{ route('tests.start', 'test5') }}" class="btn btn-primary">Начать тест</a>
+        </div>
+
+        <!-- Тест 6 -->
+        <div class="test-block">
+            <h2>Тест 6</h2>
+            <p><strong>Уровень сложности:</strong> Продвинутый</p>
+            <p><strong>Время прохождения:</strong> 75 минут</p>
+            <p><strong>Язык:</strong> Английский</p>
+            <p><strong>Приближенные концепции C++:</strong> Перегрузка операторов, исключения</p>
+            <a href="{{ route('tests.start', 'test6') }}" class="btn btn-primary">Начать тест</a>
+        </div>
+
+
         <!-- Продолжите добавлять остальные тесты по аналогии -->
     </div>
 </div>

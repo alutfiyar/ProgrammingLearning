@@ -9,4 +9,8 @@ class TestController extends Controller
     public function index() {
         return view('tests.tests');
     }
+
+    public function start($test) {
+        echo $test;
+    }
 }
