@@ -240,3 +240,86 @@ a:hover {
 .test-block a:hover {
     background-color: #267cbf;
 }
+
+
+
+
+
+
+
+
+
+
+
+p {
+    margin-bottom: 10px;
+}
+
+#questions-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    height: auto; /* На весь экран по вертикали */
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+#option-json{
+    border-radius: 10px;
+    background-color: #7abdff;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #3490dc;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2779bd;
+}
+
+#timer {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Добавленные классы */
+
+.test-info {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.question {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.answer-options {
+    margin-top: 10px;
+}
+
+.answer-option {
+    margin-bottom: 10px;
+}
+
+.correct-answer {
+    color: #28a745;
+    font-weight: bold;
+}
