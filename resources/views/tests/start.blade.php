@@ -12,16 +12,16 @@
         <p>Уровень сложности: {{ $testData->difficulty_level }}</p>
         <p>Длительность теста: 10 минут</p>
     </div>
-    
 
-    <h2>Вопросы:</h2>   
+
+    <h2>Вопросы:</h2>
     <div id="questions-container" class="question">
         <div style = "width: 40%" id = "question">
             <!-- Здесь будут подгружаться вопросы из JSON с использованием JavaScript -->
         </div>
-        
+
     </div>
-    
+
     <p id="timer">Оставшееся время: 10:00</p>
 
     <button id="start-test-button" class="btn btn-primary">Начать тест</button>
@@ -73,7 +73,7 @@
                     } else {
                         // Все вопросы пройдены, завершение теста
                         clearInterval(timerInterval);
-                        
+
                         questionContainer.innerHTML = `
                             <h3>Тест завершен. Спасибо за участие!</h3>
                             <div>
@@ -87,8 +87,8 @@
                             console.log(questions.length);
                             var html = questionContainer.innerHTML;
                             for (var i = 0; i < questions.length; i++) {
-                                
-                                
+
+
                                 var additinghtml = `
                                 <p>${question.question_text}</p>
                                 <ul>
