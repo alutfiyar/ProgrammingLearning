@@ -7,8 +7,12 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    text-align: center;
 }
 
+#header-container-item {
+    width: 450px;
+}
 
 .navigation-menu {
     list-style: none;

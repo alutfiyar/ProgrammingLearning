@@ -35,7 +35,10 @@ class AuthController extends Controller
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8|confirmed',
         ]);
-        // echo "here";
+        
+        $user = User::create($request(['name', 'email', 'password']));
+        auth()->login($user);
+        return redirect()->to('/dashboard');
     }
 
     public function logout()
