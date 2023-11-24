@@ -17,7 +17,7 @@ use App\Http\Controllers\TestController;
 
 Route::get('/', function () {
     return view('dashboard');
-});
+})->name('dashboard');
 
 Route::get('/tests', [TestController::class, "index"])->name('tests.index');
 
@@ -26,4 +26,7 @@ Route::get('/tests/start/{test}', [TestController::class, "start"])->name('tests
 Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register')->middleware('guest');
 Route::post('/register', [AuthController::class, 'register']);
 
-Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login')->middleware('guest');
+Route::post('/login', [AuthController::class, 'Login']);
+
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');

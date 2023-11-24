@@ -19,7 +19,7 @@ Register - Programming Learning
             <div style = "grid;grid-column-start: 1;">
                 <div>
                     <h6>Full Name</h6>
-                    <input class="form-control @error('name') is-invalid @enderror" name = "name" type = "text" placeholder = "Enter your name" style = "padding: 0px 15px; width: 100%; height: 40px;" require>
+                    <input class="form-control @error('name') is-invalid @enderror" name = "name" type = "text" placeholder = "Enter your name" style = "padding: 0px 15px; width: 100%; height: 40px;" required>
                     @error('name')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -31,7 +31,7 @@ Register - Programming Learning
             <div style = "grid;grid-column-start: 2;">
                 <div>
                     <h6>Username</h6>
-                    <input class="form-control @error('username') is-invalid @enderror"  name = "username" type = "text" placeholder = "Enter your username" style = "padding: 0px 15px; width: 100%; height: 40px;">
+                    <input class="form-control @error('username') is-invalid @enderror"  name = "username" type = "text" placeholder = "Enter your username" style = "padding: 0px 15px; width: 100%; height: 40px;" required>
                     @error('username')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -43,7 +43,7 @@ Register - Programming Learning
             <div style = "grid;grid-column-start: 1;">
                 <div>
                     <h6>Email</h6>
-                    <input class="form-control @error('email') is-invalid @enderror"  name = "email" type = "email" placeholder = "Enter your email" style = "padding: 0px 15px; width: 100%; height: 40px;">
+                    <input class="form-control @error('email') is-invalid @enderror"  name = "email" type = "email" placeholder = "Enter your email" style = "padding: 0px 15px; width: 100%; height: 40px;" required>
                     @error('email')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -54,7 +54,7 @@ Register - Programming Learning
             <div style = "grid;grid-column-start: 2;">
                 <div>
                     <h6>Phone Number</h6>
-                    <input class="form-control @error('phone') is-invalid @enderror"   name = "phone" type = "tel" placeholder = "Enter your number" style = "padding: 0px 15px; width: 100%; height: 40px;">
+                    <input class="form-control @error('phone') is-invalid @enderror"   name = "phone" type = "tel" placeholder = "Enter your number" style = "padding: 0px 15px; width: 100%; height: 40px;" required>
                     @error('phone')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -65,7 +65,7 @@ Register - Programming Learning
             <div style = "grid;grid-column-start: 1;">
                 <div>
                     <h6>Password</h6>
-                    <input class="form-control @error('password') is-invalid @enderror"   name = "password" type = "password" placeholder = "Enter your password" style = "padding: 0px 15px; width: 100%; height: 40px;">
+                    <input class="form-control @error('password') is-invalid @enderror"   name = "password" type = "password" placeholder = "Enter your password" style = "padding: 0px 15px; width: 100%; height: 40px;" required>
                     @error('password')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -76,12 +76,7 @@ Register - Programming Learning
             <div style = "grid;grid-column-start: 2;">
                 <div>
                     <h6>Confirm Password</h6>
-                    <input class="form-control @error('repassword') is-invalid @enderror"   name = "repassword" type = "password" placeholder = "Confirm your password" style = "padding: 0px 15px; width: 100%; height: 40px;">
-                    @error('repassword')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+                    <input class="form-control" name = "repassword" type = "password" placeholder = "Confirm your password" style = "padding: 0px 15px; width: 100%; height: 40px;" required>
                 </div>
             </div>
         </div>
