@@ -1,4 +1,38 @@
 /* Стили для основного контейнера */
+a :hover {
+    cursor: pointer;
+}
+
+p {
+    font-size: 18px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+  }
+
+.tutorial-item {
+    color:white; 
+    margin: 10px 0px; 
+    padding: 0px;
+}
+
+.tutorial-item2 {
+    color:black; 
+    margin: 10px 0px; 
+}
+
+.tutorial-item2 {
+    cursor: pointer;
+}
+
+.tutorial-item:hover {
+    cursor: pointer;
+    color: #ffd700;
+}
+
 header {
     background-color: #3498db; /* Цвет фона */
     color: #fff; /* Цвет текста */

@@ -3,6 +3,8 @@
 @section('header-items')
     @guest
         <li><a href="/login">Sign in</a></li>
+    @else
+        <li><a href = "/profile">Profile</a></li>
     @endguest
 @endsection
 @include('layouts.header')

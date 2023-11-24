@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\TestController;
-
+use App\Http\Controllers\TutorialController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,9 +19,18 @@ Route::get('/', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::get('/profile', [AuthController::class, 'ShowProfile'])->name('profile')->middleware('auth');
+
 Route::get('/tests', [TestController::class, "index"])->name('tests.index');
 
 Route::get('/tests/start/{test}', [TestController::class, "start"])->name('tests.start');
+
+
+Route::get('/tutorials', function () {
+    return view('tutorials');
+})->name('tutorials');
+
+Route::get('/tutorials/{tutorial}', [TutorialController::class, "start"])->name('tutorials');
 
 Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register')->middleware('guest');
 Route::post('/register', [AuthController::class, 'register']);
