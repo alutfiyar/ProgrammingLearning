@@ -20,7 +20,7 @@
             "correct_answer": "int x;"
         },
         {
-            "question_text": "Что делает оператор if в C++?",
+            "question_text": "Что с собой предстовляет оператор if в C++?",
             "answer_options": ["Цикл", "Условный оператор", "Функция", "Массив"],
             "correct_answer": "Условный оператор"
         },
@@ -35,18 +35,18 @@
             "correct_answer": "Дробное число"
         },
         {
-            "question_text": "Какой оператор используется для цикла for в C++?",
+            "question_text": "Какой оператор используется для цикла c счетчиком в C++?",
             "answer_options": ["for", "while", "if", "switch"],
             "correct_answer": "for"
         },
         {
             "question_text": "Как объявить строковую переменную в C++?",
-            "answer_options": ["string name;", "int x;", "boolean isTrue;", "double price;"],
-            "correct_answer": "string name;"
+            "answer_options": ["int x;", "text isTrue;", "string price;","double name;"],
+            "correct_answer": "string price;"
         },
         {
             "question_text": "Какой оператор используется для ветвления в C++?",
-            "answer_options": ["if", "while", "for", "switch"],
+            "answer_options": ["while", "for","if", "switch"],
             "correct_answer": "if"
         },
         {
