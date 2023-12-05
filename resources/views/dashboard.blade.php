@@ -1,9 +1,19 @@
 @extends('layouts.app')
+
+@section('header-items')
+    @guest
+        <li><a href="/login">Sign in</a></li>
+    @else
+        <li><a href = "/profile">Profile</a></li>
+    @endguest
+@endsection
 @include('layouts.header')
 
 @section('title')
 Добро пожаловать - Тесты на C++
 @endsection
+
+
 
 @section('content')
     <div class = "dash-container">

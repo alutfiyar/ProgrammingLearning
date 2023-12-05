@@ -8,10 +8,6 @@
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- Здесь может быть шапка сайта -->
-    </header>
-
     <nav>
         <!-- Здесь может быть навигация -->
     </nav>
