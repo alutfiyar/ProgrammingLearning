@@ -9,10 +9,14 @@ class AdminController extends Controller
 {
     public function index() {
         if (Auth::check()) {
-            echo "Authorized";
+            return view('admin.admin_login');
         }
         else {
-            echo "not authorized";
+            return redirect()->to("/");
         }
+    }
+
+    public function login() {
+        
     }
 }
