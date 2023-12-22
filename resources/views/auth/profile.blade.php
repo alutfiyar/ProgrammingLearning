@@ -16,5 +16,7 @@
 
 
 @section('content')
-
+<div style = "width: 100%;">
+    <a href = "{{Route('logout')}}" type = "submit" style = "color: white; padding: 0px 100px; width: 500px;background-color: red; margin: 20px 0px; height: 40px">Logout</a>
+</div>
 @endsection
