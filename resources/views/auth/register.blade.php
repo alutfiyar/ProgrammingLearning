@@ -86,6 +86,9 @@ Register - Programming Learning
         <div>
             <button type = "submit" style = "width: 100%;background-color: #4267B2; margin: 20px 0px; height: 40px">Register</button>
         </div>
+        <div style = "width: 100%; display:flex; flex-direction: row; justify-content: center;">
+            <a href = "{{Route('login')}}" style = "color: black;text-align: center;width: 100%; margin: 0px 0px; height: 40px;">Login</a>
+        </div>
         
     </form>
 @endsection
