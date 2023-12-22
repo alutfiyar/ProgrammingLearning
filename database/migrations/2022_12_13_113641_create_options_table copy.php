@@ -4,6 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+
 return new class extends Migration
 {
     /**
@@ -13,9 +14,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('variants', function (Blueprint $table) {
-            $table->id('VariantID');
-            $table->string('VariantText', 255)->nullable(false);
+        Schema::create('options', function (Blueprint $table) {
+            $table->id('id');
+            $table->string('title_ru')->unique();
+            $table->string('title_eng')->unique();
         });
     }
 
@@ -26,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('variants');
+        Schema::dropIfExists('options');
     }
 };

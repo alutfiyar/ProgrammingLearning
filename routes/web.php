@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\TutorialController;
 /*
@@ -39,3 +40,6 @@ Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login')->m
 Route::post('/login', [AuthController::class, 'Login']);
 
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::get('/admin', [AdminController::class, 'enter'])->name('admin');
+Route::post('/admin/createPL', [AdminController::class, 'createPL']);
