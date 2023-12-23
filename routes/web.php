@@ -43,3 +43,4 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 Route::post('/admin', [AdminController::class, 'login']);
+Route::get('/admin_logout', [AdminController::class, 'logout'])->name('admin_logout');
