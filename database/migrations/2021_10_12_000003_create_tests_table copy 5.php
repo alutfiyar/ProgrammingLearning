@@ -23,18 +23,8 @@ return new class extends Migration
             $table->unsignedBigInteger('test_count')->nullable()->default(10);
             $table->unsignedBigInteger('passing_time')->nullable()->default(10);
             $table->unsignedBigInteger('programming_lang_id')->nullable(false);
-            $table->unsignedBigInteger('option1_id')->nullable(false);
-            $table->unsignedBigInteger('option2_id')->nullable(false);
-            $table->unsignedBigInteger('option3_id')->nullable(false);
-            $table->unsignedBigInteger('option4_id')->nullable(false);
-            $table->unsignedBigInteger('answer_id')->nullable(false);
 
             $table->foreign('programming_lang_id')->references('id')->on('programming_languages');
-            $table->foreign('option1_id')->references('id')->on('programming_languages');
-            $table->foreign('option2_id')->references('id')->on('programming_languages');
-            $table->foreign('option3_id')->references('id')->on('programming_languages');
-            $table->foreign('option4_id')->references('id')->on('programming_languages');
-            $table->foreign('answer_id')->references('id')->on('programming_languages');
         });
     }
 

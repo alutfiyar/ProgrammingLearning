@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Options extends Model
 {
+    protected $fillable = [
+        'option_eng',
+        'option_ru'
+    ];
+    public $timestamps = false;
     use HasFactory;
 }

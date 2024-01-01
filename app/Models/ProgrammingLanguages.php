@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ProgrammingLanguages extends Model
 {
+    protected $fillable = ['language'];
+    public $timestamps = false;
     use HasFactory;
 }
