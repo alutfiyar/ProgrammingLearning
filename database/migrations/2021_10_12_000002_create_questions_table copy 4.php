@@ -22,7 +22,18 @@ return new class extends Migration
             $table->string('concept')->nullable(false);
             $table->unsignedBigInteger('programming_lang_id')->nullable(false);
 
+            $table->unsignedBigInteger('option1_id')->nullable(false);
+            $table->unsignedBigInteger('option2_id')->nullable(false);
+            $table->unsignedBigInteger('option3_id')->nullable(false);
+            $table->unsignedBigInteger('option4_id')->nullable(false);
+            $table->unsignedBigInteger('answer_id')->nullable(false);
+
             $table->foreign('programming_lang_id')->references('id')->on('programming_languages');
+            $table->foreign('option1_id')->references('id')->on('options');
+            $table->foreign('option2_id')->references('id')->on('options');
+            $table->foreign('option3_id')->references('id')->on('options');
+            $table->foreign('option4_id')->references('id')->on('options');
+            $table->foreign('answer_id')->references('id')->on('options');
         });
     }
 

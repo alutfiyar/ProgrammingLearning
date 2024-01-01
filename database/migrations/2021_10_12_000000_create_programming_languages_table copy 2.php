@@ -16,7 +16,7 @@ return new class extends Migration
     {
         Schema::create('programming_languages', function (Blueprint $table) {
             $table->id();
-            $table->string('language');
+            $table->string('language')->nullable(false)->unique();
         });
     }
 

@@ -15,7 +15,6 @@ class AuthController extends Controller
     {
         return view('auth.login');
     }
-
     public function Login(Request $request)
     {
         $this->validate($request, [
@@ -32,12 +31,10 @@ class AuthController extends Controller
         }
         return redirect("login")->withErrors(['email' => 'Login details are not valid']);
     }
-
     public function showRegistrationForm()
     {
         return view('auth.register');
     }
-
     public function register(Request $request)
     {
         // Валидация данных
@@ -54,7 +51,6 @@ class AuthController extends Controller
         
         return redirect()->to('/');
     }
-
     public function Create(array $data) {
         $hashed = Hash::make($data['password'], [
             'rounds' => 12,
@@ -66,7 +62,6 @@ class AuthController extends Controller
             'password' => $hashed
         ]);
     }
-
     public function logout()
     {
         Session::flush();
@@ -74,7 +69,6 @@ class AuthController extends Controller
 
         return redirect('/login');
     }
-
     public function ShowProfile() {
         return view('auth.profile');
     }
